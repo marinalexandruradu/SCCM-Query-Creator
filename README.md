@@ -1,5 +1,12 @@
 # SCCM-Query-Creator
 
+Version 1.1
+
+Added 71 common queries
+
+![Version1 1](https://user-images.githubusercontent.com/13455334/138614454-4c314c08-7f05-4749-8b1c-f40a25453dc2.gif)
+
+
 A simple but yet usefull app to easily convert a list of machines/users to an SCCM query.
 
 In the "Text Converter" tab, you can convert your string by selecting a default separator (; or ,) or even use your own. After the conversion, you should have a list separated by a new line.
