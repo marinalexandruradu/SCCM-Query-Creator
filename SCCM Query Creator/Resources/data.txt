@@ -1,0 +1,71 @@
+Clients not approved
+Clients requiring a reboot
+All SCCM client computers with less than 5GB free disk space on C
+All computers without an SCCM client
+Based on OU
+Based on many nested OU
+Based on domain membership
+All Workstations
+All Windows 10
+All Windows 10 November 2019 Update 19H2 (1909)
+All Windows 10 May 2019 Update 19H1 (1903)
+All Windows 10 October 2018 Update (1809)
+All Windows 10 April 2018 Update (1803)
+All Windows 10 Fall Creators Update (1709)
+All Windows 10 Creators Update (1703)
+All Windows 10 Aniversary Update (1607)
+All Windows 10 November Update (1511)
+All Windows 10 RTM (1507)
+All Windows 8.1
+All Windows 7
+All Windows Vista
+All Linux Workstations
+All Mac OS Workstations
+Workstations Based on the computer manufacturer model
+All Domain Controllers
+All Servers
+All Windows 2019 Servers
+All Windows 2016 Servers
+All Windows 2012 R2 Servers
+All Windows 2012 Servers
+All Windows 2008 R2 Servers
+All Windows 2008 Servers
+All SQL Servers
+All SQL Server Management Studio installed
+All SQL Server Management Studio v17 installed
+All SQL Servers 2017
+All SQL Servers 2016
+All SQL Servers 2014 (x64)
+All SQL Servers 2012 (x64)
+Based on IP subnet
+Based on IP range
+All Physical Systems
+All Virtual Systems
+All Office 365 Pro Plus
+All Office 365 Pro Plus 2016 (Office 365 Pro Plus)
+All Office 365 Pro Plus 2013
+Primary user on device
+Primary user and machine
+PC names and OS Build
+All VMs with Office 2007 installed
+Folder is available in the path 
+Workstations offline more than 30 days
+Computers that have 30 days old hardware information
+ConfigMgr clients waiting for another installation to finish
+All  computer objects with client installed in the specific site PS1
+Collection based on domain membership
+Computers ending with odd numbers
+Computers ending with even numbers
+Computers with failing hard drive
+All Microsoft Exchange Servers
+All Dell Systems
+All Hewlet-Packard Systems
+All Lenovo Systems
+Computers with AVG and Security Essentials Antivirus
+Is Service1 present and running
+Software Updates Last Scan Completion Greater than 30
+Adding Collection by AD Security Group
+Collection for Management Point Role
+Collection for Distribution Point Role
+Collection for Software Update Point Role (SUP Role)
+Collection based on Windows Update (KB) installed status

@@ -1,0 +1,1 @@
+select *  from  SMS_R_System inner join SMS_G_System_QUICK_FIX_ENGINEERING on SMS_G_System_QUICK_FIX_ENGINEERING.ResourceId = SMS_R_System.ResourceId where SMS_G_System_QUICK_FIX_ENGINEERING.HotFixID = "KB2552343"

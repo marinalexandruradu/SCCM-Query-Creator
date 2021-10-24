@@ -1,0 +1,6 @@
+SELECT SMS_R_System.name, SMS_R_User.UniqueUserName
+FROM SMS_R_System
+INNER JOIN SMS_UserMachineRelationship ON SMS_UserMachineRelationship.ResourceId = SMS_R_System.ResourceId
+JOIN SMS_R_User ON SMS_UserMachineRelationship.UniqueUserName = SMS_R_User.UniqueUserName
+WHERE
+SMS_UserMachineRelationship.Types = 1

@@ -1,0 +1,11 @@
+select distinct
+SMS_R_System.Name,
+SMS_G_System_SoftwareFile.FileName,
+SMS_G_System_SoftwareFile.FilePath,
+SMS_G_System_SoftwareFile.FileSize,
+SMS_G_System_SoftwareFile.ModifiedDate
+from
+SMS_R_System
+inner join SMS_G_System_SoftwareFile on SMS_G_System_SoftwareFile.ResourceID = SMS_R_System.ResourceId
+where
+SMS_G_System_SoftwareFile.FilePath like “%appdata%”

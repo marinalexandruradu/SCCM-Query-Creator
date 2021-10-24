@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +15,15 @@ namespace SCCM_Query_Creator
     public partial class Form1 : Form
     {
         AboutBox1 fmr2;
+        //readonly List<string> items = new List<string> { "cat", "carrot", "dog", "goat", "pig" };
+        List<string> MyList = new List<string>();
         public Form1()
         {
             InitializeComponent();
         }
+
+
+        
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -388,6 +394,94 @@ namespace SCCM_Query_Creator
             {
                 box.ShowDialog(this);
             }
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+            string datafromfile = Properties.Resources.data;
+            List<string> MyList2 = new List<string>();
+
+            string[] lines = datafromfile.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+
+            foreach (string line in lines)
+            {
+                MyList2.Add(line);
+            }
+            listBox1.Items.Clear();
+
+            foreach (string str in MyList2)
+            {
+                if (str.ToUpper().Contains(textBox16.Text.ToUpper()))
+                {
+                    listBox1.Items.Add(str);
+                }
+            }
+
+            double total = listBox1.Items.Count;
+            label16.Text = total.ToString();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string text = listBox1.GetItemText(listBox1.SelectedItem);
+            string text2 = "SCCM_Query_Creator.Resources." + text + ".txt";
+            string rezultat = ReadTextResourceFromAssembly(text2);
+            textBox17.Text = rezultat;
+
+            System.Reflection.Assembly thisExe;
+            thisExe = System.Reflection.Assembly.GetExecutingAssembly();
+            string[] resources = thisExe.GetManifestResourceNames();
+            string list = "";
+
+            // Build the string of resources.
+            foreach (string resource in resources)
+                list += resource + "\r\n";
+
+            //textBox17.Text = list;
+        }
+
+        public static string ReadTextResourceFromAssembly(string name)
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
+            {
+                return new StreamReader(stream).ReadToEnd();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string datafromfile = Properties.Resources.data;
+            List<string> MyList = new List<string>();
+
+            string[] lines = datafromfile.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+
+            foreach (string line in lines)
+            {
+                MyList.Add(line);
+            }
+            MyList.Sort();
+            listBox1.Items.AddRange(MyList.ToArray());
+
+            double total = MyList.Count;
+            label16.Text = total.ToString();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(textBox17.Text))
+            {
+                Clipboard.SetText(textBox17.Text);
+            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

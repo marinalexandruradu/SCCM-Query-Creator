@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,8 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -92,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -108,6 +109,78 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="amlogoalpha.ico" />
+    <EmbeddedResource Include="Resources\Collection based on Windows Update %28KB%29 installed status.txt" />
+    <EmbeddedResource Include="Resources\Collection for Software Update Point Role %28SUP Role%29.txt" />
+    <EmbeddedResource Include="Resources\Collection for Distribution Point Role.txt" />
+    <EmbeddedResource Include="Resources\Collection for Management Point Role.txt" />
+    <EmbeddedResource Include="Resources\Adding Collection by AD Security Group.txt" />
+    <EmbeddedResource Include="Resources\Software Updates Last Scan Completion Greater than 30.txt" />
+    <EmbeddedResource Include="Resources\Is Service1 present and running.txt" />
+    <EmbeddedResource Include="Resources\Computers with AVG and Security Essentials Antivirus.txt" />
+    <EmbeddedResource Include="Resources\All Lenovo Systems.txt" />
+    <EmbeddedResource Include="Resources\All Hewlet-Packard Systems.txt" />
+    <EmbeddedResource Include="Resources\All Dell Systems.txt" />
+    <EmbeddedResource Include="Resources\All Microsoft Exchange Servers.txt" />
+    <EmbeddedResource Include="Resources\Computers with failing hard drive.txt" />
+    <EmbeddedResource Include="Resources\Computers ending with even numbers.txt" />
+    <EmbeddedResource Include="Resources\Computers ending with odd numbers.txt" />
+    <EmbeddedResource Include="Resources\Collection based on domain membership.txt" />
+    <EmbeddedResource Include="Resources\All  computer objects with client installed in the specific site PS1.txt" />
+    <EmbeddedResource Include="Resources\ConfigMgr clients waiting for another installation to finish.txt" />
+    <EmbeddedResource Include="Resources\Computers that have 30 days old hardware information.txt" />
+    <EmbeddedResource Include="Resources\Workstations offline more than 30 days.txt" />
+    <EmbeddedResource Include="Resources\Folder is available in the path .txt" />
+    <EmbeddedResource Include="Resources\All VMs with Office 2007 installed.txt" />
+    <EmbeddedResource Include="Resources\PC names and OS Build.txt" />
+    <EmbeddedResource Include="Resources\Primary user and machine.txt" />
+    <EmbeddedResource Include="Resources\Primary user on device.txt" />
+    <EmbeddedResource Include="Resources\All Office 365 Pro Plus 2013.txt" />
+    <EmbeddedResource Include="Resources\All Office 365 Pro Plus 2016 %28Office 365 Pro Plus%29.txt" />
+    <EmbeddedResource Include="Resources\All Office 365 Pro Plus.txt" />
+    <EmbeddedResource Include="Resources\All Virtual Systems.txt" />
+    <EmbeddedResource Include="Resources\All Physical Systems.txt" />
+    <EmbeddedResource Include="Resources\Based on IP range.txt" />
+    <EmbeddedResource Include="Resources\Based on IP subnet.txt" />
+    <EmbeddedResource Include="Resources\All SQL Servers 2012 %28x64%29.txt" />
+    <EmbeddedResource Include="Resources\All SQL Servers 2014 %28x64%29.txt" />
+    <EmbeddedResource Include="Resources\All SQL Servers 2016.txt" />
+    <EmbeddedResource Include="Resources\All SQL Servers 2017.txt" />
+    <EmbeddedResource Include="Resources\All SQL Server Management Studio v17 installed.txt" />
+    <EmbeddedResource Include="Resources\All SQL Server Management Studio installed.txt" />
+    <EmbeddedResource Include="Resources\All SQL Servers.txt" />
+    <EmbeddedResource Include="Resources\All Windows 2008 Servers.txt" />
+    <EmbeddedResource Include="Resources\All Windows 2008 R2 Servers.txt" />
+    <EmbeddedResource Include="Resources\All Windows 2012 Servers.txt" />
+    <EmbeddedResource Include="Resources\All Windows 2012 R2 Servers.txt" />
+    <EmbeddedResource Include="Resources\All Windows 2016 Servers.txt" />
+    <EmbeddedResource Include="Resources\All Windows 2019 Servers.txt" />
+    <EmbeddedResource Include="Resources\All Servers.txt" />
+    <EmbeddedResource Include="Resources\All Domain Controllers.txt" />
+    <EmbeddedResource Include="Resources\Workstations Based on the computer manufacturer model.txt" />
+    <EmbeddedResource Include="Resources\All Mac OS Workstations.txt" />
+    <EmbeddedResource Include="Resources\All Linux Workstations.txt" />
+    <EmbeddedResource Include="Resources\All Windows Vista.txt" />
+    <EmbeddedResource Include="Resources\All Windows 7.txt" />
+    <EmbeddedResource Include="Resources\All Windows 8.1.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 RTM %281507%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 November Update %281511%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 Aniversary Update %281607%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 Creators Update %281703%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 Fall Creators Update %281709%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 April 2018 Update %281803%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 October 2018 Update %281809%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 May 2019 Update 19H1 %281903%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10 November 2019 Update 19H2 %281909%29.txt" />
+    <EmbeddedResource Include="Resources\All Windows 10.txt" />
+    <EmbeddedResource Include="Resources\All Workstations.txt" />
+    <EmbeddedResource Include="Resources\Based on domain membership.txt" />
+    <EmbeddedResource Include="Resources\Based on many nested OU.txt" />
+    <EmbeddedResource Include="Resources\Based on OU.txt" />
+    <EmbeddedResource Include="Resources\All computers without an SCCM client.txt" />
+    <EmbeddedResource Include="Resources\All SCCM client computers with less than 5GB free disk space on C.txt" />
+    <EmbeddedResource Include="Resources\Clients not approved.txt" />
+    <EmbeddedResource Include="Resources\Clients requiring a reboot.txt" />
+    <EmbeddedResource Include="Resources\data.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">

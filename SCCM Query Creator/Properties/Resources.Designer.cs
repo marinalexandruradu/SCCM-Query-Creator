@@ -8,9 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace SCCM_Query_Creator.Properties
-{
+namespace SCCM_Query_Creator.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -18,52 +19,828 @@ namespace SCCM_Query_Creator.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SCCM_Query_Creator.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System where SMS_R_System.SystemGroupName = &quot;Domain\\ADSecurityGroup1&quot;.
+        /// </summary>
+        internal static string Adding_Collection_by_AD_Security_Group {
+            get {
+                return ResourceManager.GetString("Adding_Collection_by_AD_Security_Group", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.ADSiteName = &quot;PS1&quot; AND client=1.
+        /// </summary>
+        internal static string All__computer_objects_with_client_installed_in_the_specific_site_PS1 {
+            get {
+                return ResourceManager.GetString("All__computer_objects_with_client_installed_in_the_specific_site_PS1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System where SMS_R_System.Client = &quot;0&quot;.
+        /// </summary>
+        internal static string All_computers_without_an_SCCM_client {
+            get {
+                return ResourceManager.GetString("All_computers_without_an_SCCM_client", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *  from  SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_Rxxxxxxxx_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Manufacturer like &quot;Dell%&quot;.
+        /// </summary>
+        internal static string All_Dell_Systems {
+            get {
+                return ResourceManager.GetString("All_Dell_Systems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *  from  SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceId = SMS_R_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Roles like &quot;%Domain_Controller%&quot;.
+        /// </summary>
+        internal static string All_Domain_Controllers {
+            get {
+                return ResourceManager.GetString("All_Domain_Controllers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client
+        ///from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceId = SMS_R_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Manufacturer like &quot;Hewlett-Packard%&quot; or SMS_G_System_COMPUTER_SYSTEM.Manufacturer like &quot;HP%&quot;.
+        /// </summary>
+        internal static string All_Hewlet_Packard_Systems {
+            get {
+                return ResourceManager.GetString("All_Hewlet_Packard_Systems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System
+        ///inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceId = SMS_R_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Manufacturer like &quot;Lenovo%&quot;.
+        /// </summary>
+        internal static string All_Lenovo_Systems {
+            get {
+                return ResourceManager.GetString("All_Lenovo_Systems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = 13.
+        /// </summary>
+        internal static string All_Linux_Workstations {
+            get {
+                return ResourceManager.GetString("All_Linux_Workstations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Mac%&quot;.
+        /// </summary>
+        internal static string All_Mac_OS_Workstations {
+            get {
+                return ResourceManager.GetString("All_Mac_OS_Workstations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *  from  SMS_R_System inner join SMS_G_System_SERVICE on
+        ///SMS_G_System_SERVICE.ResourceId = SMS_R_System.ResourceId
+        ///where SMS_G_System_SERVICE.Name like &quot;Microsoft Exchange Transport %&quot;.
+        /// </summary>
+        internal static string All_Microsoft_Exchange_Servers {
+            get {
+                return ResourceManager.GetString("All_Microsoft_Exchange_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft Office 365 ProPlus %&quot;.
+        /// </summary>
+        internal static string All_Office_365_Pro_Plus {
+            get {
+                return ResourceManager.GetString("All_Office_365_Pro_Plus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceId = SMS_R_System.ResourceId where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft Office 365 ProPlus - %&quot; and SMS_G_System_INSTALLED_SOFTWARE.ProductVersion like &quot;15.0.%&quot;.
+        /// </summary>
+        internal static string All_Office_365_Pro_Plus_2013 {
+            get {
+                return ResourceManager.GetString("All_Office_365_Pro_Plus_2013", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceId = SMS_R_System.ResourceId where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft Office 365 ProPlus - %&quot; and SMS_G_System_INSTALLED_SOFTWARE.ProductVersion like &quot;16.%&quot;.
+        /// </summary>
+        internal static string All_Office_365_Pro_Plus_2016__Office_365_Pro_Plus_ {
+            get {
+                return ResourceManager.GetString("All_Office_365_Pro_Plus_2016__Office_365_Pro_Plus_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.OperatingSystemNameandVersion, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System where SMS_R_System.IsVirtualMachine like &quot;False&quot;.
+        /// </summary>
+        internal static string All_Physical_Systems {
+            get {
+                return ResourceManager.GetString("All_Physical_Systems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,
+        /// SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,
+        /// SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_LOGICAL_DISK on SMS_G_System_LOGICAL_DISK.ResourceID = SMS_R_System.ResourceId
+        /// where SMS_G_System_LOGICAL_DISK.DeviceID = &quot;C:&quot; and SMS_G_System_LOGICAL_DISK.FreeSpace &lt;= 5000.
+        /// </summary>
+        internal static string All_SCCM_client_computers_with_less_than_5GB_free_disk_space_on_C {
+            get {
+                return ResourceManager.GetString("All_SCCM_client_computers_with_less_than_5GB_free_disk_space_on_C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ####Option 1#####
+        ///
+        ///select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Server%&quot;
+        ///OR SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Advanced Server%&quot;
+        ///
+        ///####Option 2#####
+        ///
+        ///select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceTyp [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string All_Servers {
+            get {
+                return ResourceManager.GetString("All_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft SQL Server Management Studio %&quot;.
+        /// </summary>
+        internal static string All_SQL_Server_Management_Studio_installed {
+            get {
+                return ResourceManager.GetString("All_SQL_Server_Management_Studio_installed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft SQL Server Management Studio - 17%&quot;.
+        /// </summary>
+        internal static string All_SQL_Server_Management_Studio_v17_installed {
+            get {
+                return ResourceManager.GetString("All_SQL_Server_Management_Studio_v17_installed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *  from  SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Roles like &quot;%SQLServer%&quot;.
+        /// </summary>
+        internal static string All_SQL_Servers {
+            get {
+                return ResourceManager.GetString("All_SQL_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType,
+        ///SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup,
+        ///SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft SQL Server 2012 (64-%&quot;.
+        /// </summary>
+        internal static string All_SQL_Servers_2012__x64_ {
+            get {
+                return ResourceManager.GetString("All_SQL_Servers_2012__x64_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType,
+        ///SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup,
+        ///SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft SQL Server 2014 (64-%&quot;.
+        /// </summary>
+        internal static string All_SQL_Servers_2014__x64_ {
+            get {
+                return ResourceManager.GetString("All_SQL_Servers_2014__x64_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType,
+        ///SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup,
+        ///SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_INSTALLED_SOFTWARE.ProductName like &quot;Microsoft SQL Server 2016&quot;.
+        /// </summary>
+        internal static string All_SQL_Servers_2016 {
+            get {
+                return ResourceManager.GetString("All_SQL_Servers_2016", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceId = SMS_R_System.ResourceId where SMS_G_System_INSTALLED_SOFTWARE.ProductName = &quot;Microsoft SQL Server 2017&quot;.
+        /// </summary>
+        internal static string All_SQL_Servers_2017 {
+            get {
+                return ResourceManager.GetString("All_SQL_Servers_2017", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.OperatingSystemNameandVersion, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System where SMS_R_System.IsVirtualMachine like &quot;True&quot;.
+        /// </summary>
+        internal static string All_Virtual_Systems {
+            get {
+                return ResourceManager.GetString("All_Virtual_Systems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_INSTALLED_SOFTWARE on SMS_G_System_INSTALLED_SOFTWARE.ResourceId = SMS_R_System.ResourceId where or SMS_G_System_INSTALLED_SOFTWARE.ProductName = “Microsoft Office Professional Plus 2007”.
+        /// </summary>
+        internal static string All_VMs_with_Office_2007_installed {
+            get {
+                return ResourceManager.GetString("All_VMs_with_Office_2007_installed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Workstation 10.0%&quot;.
+        /// </summary>
+        internal static string All_Windows_10 {
+            get {
+                return ResourceManager.GetString("All_Windows_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;14393&quot;.
+        /// </summary>
+        internal static string All_Windows_10_Aniversary_Update__1607_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_Aniversary_Update__1607_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;17134&quot;.
+        /// </summary>
+        internal static string All_Windows_10_April_2018_Update__1803_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_April_2018_Update__1803_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;15063&quot; .
+        /// </summary>
+        internal static string All_Windows_10_Creators_Update__1703_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_Creators_Update__1703_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;16299&quot;.
+        /// </summary>
+        internal static string All_Windows_10_Fall_Creators_Update__1709_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_Fall_Creators_Update__1709_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;18362&quot;.
+        /// </summary>
+        internal static string All_Windows_10_May_2019_Update_19H1__1903_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_May_2019_Update_19H1__1903_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;18363&quot;.
+        /// </summary>
+        internal static string All_Windows_10_November_2019_Update_19H2__1909_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_November_2019_Update_19H2__1909_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;10586&quot;.
+        /// </summary>
+        internal static string All_Windows_10_November_Update__1511_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_November_Update__1511_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;17763&quot;.
+        /// </summary>
+        internal static string All_Windows_10_October_2018_Update__1809_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_October_2018_Update__1809_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.BuildNumber = &quot;10240&quot;.
+        /// </summary>
+        internal static string All_Windows_10_RTM__1507_ {
+            get {
+                return ResourceManager.GetString("All_Windows_10_RTM__1507_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Server 6.1%&quot;
+        ///OR SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Advanced Server 6.1%&quot;.
+        /// </summary>
+        internal static string All_Windows_2008_R2_Servers {
+            get {
+                return ResourceManager.GetString("All_Windows_2008_R2_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Server 6.0%&quot;
+        ///OR SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Advanced Server 6.0%&quot;.
+        /// </summary>
+        internal static string All_Windows_2008_Servers {
+            get {
+                return ResourceManager.GetString("All_Windows_2008_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Server 6.3%&quot;
+        ///OR SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Advanced Server 6.3%&quot;.
+        /// </summary>
+        internal static string All_Windows_2012_R2_Servers {
+            get {
+                return ResourceManager.GetString("All_Windows_2012_R2_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Server 6.2%&quot;
+        ///OR SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Advanced Server 6.2%&quot;.
+        /// </summary>
+        internal static string All_Windows_2012_Servers {
+            get {
+                return ResourceManager.GetString("All_Windows_2012_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Server 10.0%&quot;
+        ///OR SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Advanced Server 10.0%&quot;.
+        /// </summary>
+        internal static string All_Windows_2016_Servers {
+            get {
+                return ResourceManager.GetString("All_Windows_2016_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Name like &quot;Microsoft Windows Server 2019 %&quot;.
+        /// </summary>
+        internal static string All_Windows_2019_Servers {
+            get {
+                return ResourceManager.GetString("All_Windows_2019_Servers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Workstation 6.1%&quot;.
+        /// </summary>
+        internal static string All_Windows_7 {
+            get {
+                return ResourceManager.GetString("All_Windows_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.OperatingSystemNameandVersion like &quot;select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string All_Windows_8_1 {
+            get {
+                return ResourceManager.GetString("All_Windows_8_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Workstation 6.0%&quot;.
+        /// </summary>
+        internal static string All_Windows_Vista {
+            get {
+                return ResourceManager.GetString("All_Windows_Vista", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_System.OperatingSystemNameandVersion,
+        /// SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        /// from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &quot;Microsoft Windows NT Workstation%&quot;.
+        /// </summary>
+        internal static string All_Workstations {
+            get {
+                return ResourceManager.GetString("All_Workstations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select * from  SMS_R_System where SMS_R_System.ResourceDomainORWorkgroup = &quot;domain&quot;.
+        /// </summary>
+        internal static string Based_on_domain_membership {
+            get {
+                return ResourceManager.GetString("Based_on_domain_membership", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *
+        ///from SMS_R_System
+        ///where SMS_R_System.IPAddresses like &quot;10.10.10.2[1-9]&quot;.
+        /// </summary>
+        internal static string Based_on_IP_range {
+            get {
+                return ResourceManager.GetString("Based_on_IP_range", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///FROM SMS_R_System WHERE SMS_R_System.IPSubnets LIKE &apos;192.168.1[1-9].0&apos;.
+        /// </summary>
+        internal static string Based_on_IP_subnet {
+            get {
+                return ResourceManager.GetString("Based_on_IP_subnet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *  from  SMS_R_System where SMS_R_System.SystemOUName like &quot;domain.local/%/Workstations&quot;.
+        /// </summary>
+        internal static string Based_on_many_nested_OU {
+            get {
+                return ResourceManager.GetString("Based_on_many_nested_OU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select * from  SMS_R_System where LOWER(SMS_R_System.SystemOUName) = &quot;domain.local/OU/OU&quot;.
+        /// </summary>
+        internal static string Based_on_OU {
+            get {
+                return ResourceManager.GetString("Based_on_OU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        /// SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        /// inner join SMS_CM_RES_COLL_SMS00001 on SMS_CM_RES_COLL_SMS00001.ResourceId = SMS_R_System.ResourceId
+        /// where SMS_CM_RES_COLL_SMS00001.IsApproved= &quot;0&quot;.
+        /// </summary>
+        internal static string Clients_not_approved {
+            get {
+                return ResourceManager.GetString("Clients_not_approved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,
+        /// SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,
+        /// SMS_R_SYSTEM.Client from SMS_R_System join sms_combineddeviceresources on
+        /// sms_combineddeviceresources.resourceid = sms_r_system.resourceid
+        /// where sms_combineddeviceresources.clientstate != 0.
+        /// </summary>
+        internal static string Clients_requiring_a_reboot {
+            get {
+                return ResourceManager.GetString("Clients_requiring_a_reboot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select * from  SMS_R_System where SMS_R_System.ResourceDomainORWorkgroup = &quot;domain&quot;.
+        /// </summary>
+        internal static string Collection_based_on_domain_membership {
+            get {
+                return ResourceManager.GetString("Collection_based_on_domain_membership", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select *  from  SMS_R_System inner join SMS_G_System_QUICK_FIX_ENGINEERING on SMS_G_System_QUICK_FIX_ENGINEERING.ResourceId = SMS_R_System.ResourceId where SMS_G_System_QUICK_FIX_ENGINEERING.HotFixID = &quot;KB2552343&quot;.
+        /// </summary>
+        internal static string Collection_based_on_Windows_Update__KB__installed_status {
+            get {
+                return ResourceManager.GetString("Collection_based_on_Windows_Update__KB__installed_status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from sms_r_system where SystemRoles like &apos;%SMS Distribution Point%&apos;.
+        /// </summary>
+        internal static string Collection_for_Distribution_Point_Role {
+            get {
+                return ResourceManager.GetString("Collection_for_Distribution_Point_Role", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from sms_r_system where SystemRoles like &apos;%SMS Management Point%&apos;.
+        /// </summary>
+        internal static string Collection_for_Management_Point_Role {
+            get {
+                return ResourceManager.GetString("Collection_for_Management_Point_Role", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from sms_r_system where SystemRoles like &apos;%SMS Software Update Point%&apos;.
+        /// </summary>
+        internal static string Collection_for_Software_Update_Point_Role__SUP_Role_ {
+            get {
+                return ResourceManager.GetString("Collection_for_Software_Update_Point_Role__SUP_Role_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,
+        ///SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup,
+        ///SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.Name like &quot;%[02468]&quot;.
+        /// </summary>
+        internal static string Computers_ending_with_even_numbers {
+            get {
+                return ResourceManager.GetString("Computers_ending_with_even_numbers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,
+        ///SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup,
+        ///SMS_R_SYSTEM.Client from SMS_R_System
+        ///where SMS_R_System.Name like &quot;%[13579]&quot;.
+        /// </summary>
+        internal static string Computers_ending_with_odd_numbers {
+            get {
+                return ResourceManager.GetString("Computers_ending_with_odd_numbers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from SMS_R_System
+        ///inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Name  not in (select SMS_R_System.Name
+        ///from SMS_R_System inner join SMS_G_System_WORKSTATION_STATUS on SMS_G_System_WORKSTATION_STATUS.ResourceID = SMS_R_System.ResourceId
+        ///w [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Computers_that_have_30_days_old_hardware_information {
+            get {
+                return ResourceManager.GetString("Computers_that_have_30_days_old_hardware_information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name,
+        ///SMS_R_SYSTEM.SMSUniqueIdentifier, SMS_R_SYSTEM.ResourceDomainORWorkgroup,
+        ///SMS_R_SYSTEM.Client from SMS_R_System
+        ///inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId
+        ///inner join SMS_G_System_ADD_REMOVE_PROGRAMS_64 on SMS_G_System_ADD_REMOVE_PROGRAMS_64.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like &quot;%avg%&quot;
+        ///or SMS_G_Sys [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Computers_with_AVG_and_Security_Essentials_Antivirus {
+            get {
+                return ResourceManager.GetString("Computers_with_AVG_and_Security_Essentials_Antivirus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType,
+        ///SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client
+        ///from SMS_R_System
+        ///inner join SMS_G_System_DISK on SMS_G_System_DISK.ResourceId = SMS_R_System.ResourceId
+        ///where SMS_G_System_DISK.Status = &quot;Pred Fail&quot; order by SMS_R_System.Name DESC.
+        /// </summary>
+        internal static string Computers_with_failing_hard_drive {
+            get {
+                return ResourceManager.GetString("Computers_with_failing_hard_drive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID, SMS_R_SYSTEM.ResourceType, SMS_R_SYSTEM.Name, SMS_R_SYSTEM.SMSUniqueIdentifier,
+        ///SMS_R_SYSTEM.ResourceDomainORWorkgroup, SMS_R_SYSTEM.Client from sms_r_system AS sms_r_system
+        ///inner join SMS_UpdateComplianceStatus as c on c.machineid=sms_r_system.resourceid where c.LastEnforcementMessageID = 3.
+        /// </summary>
+        internal static string ConfigMgr_clients_waiting_for_another_installation_to_finish {
+            get {
+                return ResourceManager.GetString("ConfigMgr_clients_waiting_for_another_installation_to_finish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clients not approved
+        ///Clients requiring a reboot
+        ///All SCCM client computers with less than 5GB free disk space on C
+        ///All computers without an SCCM client
+        ///Based on OU
+        ///Based on many nested OU
+        ///Based on domain membership
+        ///All Workstations
+        ///All Windows 10
+        ///All Windows 10 November 2019 Update 19H2 (1909)
+        ///All Windows 10 May 2019 Update 19H1 (1903)
+        ///All Windows 10 October 2018 Update (1809)
+        ///All Windows 10 April 2018 Update (1803)
+        ///All Windows 10 Fall Creators Update (1709)
+        ///All Windows 10 Creators Update (1703 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string data {
+            get {
+                return ResourceManager.GetString("data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select distinct
+        ///SMS_R_System.Name,
+        ///SMS_G_System_SoftwareFile.FileName,
+        ///SMS_G_System_SoftwareFile.FilePath,
+        ///SMS_G_System_SoftwareFile.FileSize,
+        ///SMS_G_System_SoftwareFile.ModifiedDate
+        ///from
+        ///SMS_R_System
+        ///inner join SMS_G_System_SoftwareFile on SMS_G_System_SoftwareFile.ResourceID = SMS_R_System.ResourceId
+        ///where
+        ///SMS_G_System_SoftwareFile.FilePath like “%appdata%”.
+        /// </summary>
+        internal static string Folder_is_available_in_the_path {
+            get {
+                return ResourceManager.GetString("Folder_is_available_in_the_path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select 
+        ///SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_SERVICE on SMS_G_System_SERVICE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_SERVICE.Name = &quot;Service1&quot; and SMS_G_System_SERVICE.State = &quot;Running&quot;.
+        /// </summary>
+        internal static string Is_Service1_present_and_running {
+            get {
+                return ResourceManager.GetString("Is_Service1_present_and_running", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_System.NetbiosName, SMS_G_System_OPERATING_SYSTEM.BuildNumber from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceId = SMS_R_System.ResourceId.
+        /// </summary>
+        internal static string PC_names_and_OS_Build {
+            get {
+                return ResourceManager.GetString("PC_names_and_OS_Build", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT SMS_R_System.name, SMS_R_User.UniqueUserName
+        ///FROM SMS_R_System
+        ///INNER JOIN SMS_UserMachineRelationship ON SMS_UserMachineRelationship.ResourceId = SMS_R_System.ResourceId
+        ///JOIN SMS_R_User ON SMS_UserMachineRelationship.UniqueUserName = SMS_R_User.UniqueUserName
+        ///WHERE
+        ///SMS_UserMachineRelationship.Types = 1.
+        /// </summary>
+        internal static string Primary_user_and_machine {
+            get {
+                return ResourceManager.GetString("Primary_user_and_machine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  SELECT SMS_R_System.name, SMS_R_User.UniqueUserName
+        ///  FROM SMS_R_System
+        ///  INNER JOIN SMS_UserMachineRelationship ON SMS_UserMachineRelationship.ResourceId = SMS_R_System.ResourceId
+        ///  JOIN SMS_R_User ON SMS_UserMachineRelationship.UniqueUserName = SMS_R_User.UniqueUserName
+        ///  WHERE
+        ///   SMS_UserMachineRelationship.Types = 1 .
+        /// </summary>
+        internal static string Primary_user_on_device {
+            get {
+                return ResourceManager.GetString("Primary_user_on_device", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_SUP_SCAN_TOOL on SMS_G_System_SUP_SCAN_TOOL.ResourceId = SMS_R_System.ResourceId where SMS_G_System_SUP_SCAN_TOOL.LastCompletionTime &lt;= DATEADD(dd,-30,GetDate()).
+        /// </summary>
+        internal static string Software_Updates_Last_Scan_Completion_Greater_than_30 {
+            get {
+                return ResourceManager.GetString("Software_Updates_Last_Scan_Completion_Greater_than_30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select distinct SMS_G_System_COMPUTER_SYSTEM.Manufacturer, SMS_G_System_COMPUTER_SYSTEM.Model
+        ///from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId
+        ///where SMS_G_System_COMPUTER_SYSTEM.Model = &quot;Dell&quot;.
+        /// </summary>
+        internal static string Workstations_Based_on_the_computer_manufacturer_model {
+            get {
+                return ResourceManager.GetString("Workstations_Based_on_the_computer_manufacturer_model", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System where SMS_R_System.Name in ( select Name from SMS_R_System where ((DATEDIFF(day, SMS_R_SYSTEM.AgentTime, getdate()) &gt;=30) and AgentName = “SMS_AD_SYSTEM_DISCOVERY_AGENT”) ) and SMS_R_System.Name in ( select Name from SMS_R_System where ((DATEDIFF(day, SMS_R_SYSTEM.AgentTime, getdate()) &gt;=30) and AgentName = “Heartbeat Discovery”)).
+        /// </summary>
+        internal static string Workstations_offline_more_than_30_days {
+            get {
+                return ResourceManager.GetString("Workstations_offline_more_than_30_days", resourceCulture);
             }
         }
     }

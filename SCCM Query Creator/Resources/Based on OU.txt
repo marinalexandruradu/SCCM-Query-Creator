@@ -1,0 +1,1 @@
+select * from  SMS_R_System where LOWER(SMS_R_System.SystemOUName) = "domain.local/OU/OU"

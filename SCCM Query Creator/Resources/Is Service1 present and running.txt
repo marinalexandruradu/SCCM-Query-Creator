@@ -1,0 +1,2 @@
+select 
+SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_SERVICE on SMS_G_System_SERVICE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_SERVICE.Name = "Service1" and SMS_G_System_SERVICE.State = "Running"
